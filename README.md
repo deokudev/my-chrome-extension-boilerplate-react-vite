@@ -1,3 +1,35 @@
+## Quick Guide
+- 아래 명령어를 수행한다.
+```
+# pnpm 패키지 관리자 global 설치(최초 1회)
+# npm, yarn의 대체용으로 node_modules를 여러 곳에서 공유하여 사용하는 방식을 채용하여? 효율적인 패키지 관리를 돕는다.
+npm install -g pnpm
+
+# 의존성 설치
+pnpm install
+
+# 실행하기 (with live reload)
+pnpm dev
+
+# 테스트하기
+- chrome://extensions/ 접속
+- 우측 상단 개발자 모드 활성화
+- 좌측 상단 "압축해제된 확장 프로그램을 로드합니다" 버튼을 클릭하고, 프로젝트의 dist 폴더 열기
+- 확장 프로그램에서 테스트 진행
+
+# 배포하기
+pnpm build
+- 구글 개발자 등록(5달러)
+- dashboard에 dist 폴더를 zip한 파일을 업로드
+- 앱 설명, 아이콘, 스크린샷 업로드 후 제출
+
+```
+
+## 기타 기능
+- 환경 변수 설정
+1. .example.env의 값을 변경하여, .env로 변경한다.
+2. import.meta.env.{YOUR_KEY} 형식으로 사용
+
 <div align="center">
 
 <picture>
@@ -225,3 +257,4 @@ This Boilerplate is made possible thanks to all of its contributors.
 ---
 
 Made by [Jonghakseo](https://jonghakseo.github.io/)
+ㄴ
